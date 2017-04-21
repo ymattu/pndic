@@ -7,4 +7,4 @@ pndic_ja <- read.table("http://www.lr.pi.titech.ac.jp/~takamura/pubs/pn_ja.dic",
                     fileEncoding = "Shift_JIS")
 
 save(pndic_ja, file = "pndic_ja.rda")
-write.csv(pndic_ja, "pndic_ja.csv")
+write.csv(pndic_ja, "pndic_ja.csv", row.names = FALSE, quote = FALSE)
